@@ -1,0 +1,475 @@
+body {
+  margin: 0px;
+  background-color:white;
+}
+
+header {
+  height:500px;
+  width: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+  line-height: 1.2;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+
+#overlay {
+  background-color:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+
+}
+
+
+@media (max-width: 500px) {
+  header {
+    height: 50%;
+    line-height: 1.5;
+  }
+}
+
+
+header nav {
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-center;
+  align-items:center;
+}
+
+@media (max-width: 500px) {
+  header nav {
+     justify-content: space-between;
+  }
+}
+
+
+#logo {
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+@media (max-width: 500px) {
+	#logo {
+	  font-size: 1.5em;
+	}
+}
+
+
+.flex-itemnav{
+  margin-left:50px;
+  margin-right:50px;
+}
+
+.flex-itemnav a {
+  color:white;
+  padding: 2.5px 20px 2.5px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.flex-itemnav a:hover{
+  background-color: #ffffff;
+  color:#000000;
+}
+
+
+header h1{
+  z-index: 1;
+  font-family: Helvetica, sans-serif;
+  font-size: 35px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: -40px;   //COSI LO FA SALIRE VERSO L'ALTO//
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 500px) {
+  header h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+
+
+.button:hover{
+    background-color:rgba(211,211,211,0.8);
+}
+
+
+#menu{
+  display: none;
+}
+
+#menu div{
+  width: 25px;
+  height: 3px;
+  background-color:white;
+  margin:2.5px 2.5px 2.5px 2.5px;
+}
+
+
+@media(max-width:500px){
+.flex-itemnav{
+    display: none;
+  }
+  #menu{
+    display: block;
+  }
+}
+/*FIN QUI CODICE HEADER*/
+
+
+/*CODICE RELATIVO AL DIV PREFERITI */
+.preferiti h1{
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 2em;
+  letter-spacing: 2;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  background-color:rgb(70,70,70);
+}
+
+.preferiti-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media(max-width:500px) {
+  .preferiti-container{
+    width: 500px;
+}
+}
+
+.item-preferiti{
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 225px;
+  margin: 15px 20px 15px 20px;
+}
+
+@media(max-width:500px){
+	.item-preferiti{
+	   width:200px;
+	}
+}
+
+.item-preferiti .title{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  width: 225px;
+  height: 40px;
+}
+
+@media(max-width:500px){
+	.item-preferiti .title{
+	   width:200px;
+	   height:60px;
+	}
+}
+
+.item-preferiti .title h1{
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  font-size: 18px;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+  text-transform: uppercase;
+  background-color:white;
+  letter-spacing: 0;
+  color: black;
+}
+
+@media(max-width:500px){
+	.item-preferiti .title h1{
+	   width:140px;
+	   height:60px;
+	}
+}
+
+.item-preferiti .title img{
+  height:40px;
+  width:60px;
+}
+
+@media(max-width:500px){
+	.item-preferiti .title img{
+	   width:60px;
+	   height:60px;
+	}
+}
+
+.item-preferiti img{
+  height: 150px;
+  width: 100%;
+}
+
+/*CODICE RELATIVO AL DIV searchbox*/
+.searchbox{
+  display: flex;
+  justify-content: space-between;
+  background-color:rgb(70,70,70);
+  color:white;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+
+.searchbox h1{
+  width: 400px;
+  padding-left: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+@media(max-width:500px){
+.searchbox h1{
+    height: 100px;
+    font-size: 25px;
+  }
+}
+
+#searchbox-item{
+  display: flex;
+}
+
+@media(max-width:500px){
+#searchbox-item{
+    height: 100px;
+  }
+}
+
+#searchbox-item input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 200px;
+}
+
+#searchbox-item img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 0px;
+  height:60px;
+  width: 60px;
+}
+
+
+/*CODICE RELATIVO ALLA SECTION*/
+.flex-section{
+  margin-top:30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1.1;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@media(max-width:500px){
+.flex-section{
+  flex-direction: column;
+  }
+}
+
+
+.flex-itemsection{
+  width:24%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+
+/*SE SIAMO SU MOBILE LA LARGHEZZA E DIVERSA  DELLA SECTION*/
+@media(max-width:500px){
+  .flex-itemsection{
+  width:94%;
+}
+}
+
+.flex-itemsection .title{
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+  width: 350px;
+}
+
+.flex-itemsection .title img{
+  height:60px;
+  width:60px;
+}
+
+.flex-itemsection img{
+  width:350px;
+  height:220px;
+}
+
+
+.flex-itemsection .button{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font: bold 15px Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  z-index: 1;
+  border-radius: .4rem;
+  border:2px solid white;
+  padding: 1.2rem 2rem;
+  border:0px;
+  background-color: #6affe4;
+  color: black;
+  margin-top: 10px;
+  }
+
+.flex-itemsection .button:hover{
+        background-color:rgba(102,248,221,0.9);
+  }
+
+
+.information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+
+.flex-itemsection h1,.flex-itemsection .information p,.flex-itemsection .information h3{
+  width:90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:black;
+  padding-left: 5px;
+}
+
+
+@media(max-width:500px){
+.flex-itemsection h1,.flex-itemsection .information p,.flex-itemsection .information h3{
+  width: 300px;
+  padding-right: 70px;
+  }
+}
+
+
+.flex-itemsection h1{
+  text-transform: uppercase;
+}
+
+
+.flex-itemsection .information p,.flex-itemsection .information h3{
+  padding-left: 25px;
+}
+
+
+
+
+/*CODICE CSS PER IMPLEMENTARE LA MODALE*/
+.modal-view{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+.modal-view h1{
+   color:white;
+   padding: 20px;
+   margin: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*CSS APPLICATO PER IL COMPONENTE IFRAME*/
+.modal-view iframe{
+  max-height: 100%;
+  max-width: 100%;
+  width:640px;
+  height:360px;
+}
+/*CSS APPLICATO PER EVITARE LO SCROLL*/
+.noscroll{
+  overflow: hidden;
+}
+
+/*CLASSE HIDDEN DA USARE PER MOSTRARE O MENO GLI ELEMENTI*/
+  .hidden{
+    display: none;
+  }
+
+
+/*CODICE FOOTER*/
+footer{
+  display: flex;   /*FLEX CONTAINER*/
+  flex-direction: column;     /*ELEMENTI DISPOSTI PER COLONNA COSI UNO SOTTO L'ALTRO*/
+  align-items: center;            /*/*ALLINEAMENTO ORIZZONTALE AL CENTRO*/
+  height:20%;             /*ALTEZZA 20% DELLA VIEW*/
+  width: 100%;          /*LARGHEZZA 100% DELLA VIEW*/
+  background-color: rgb(70,70,70);  /*CAMBIO COLORE DI SFONDO*/
+  line-height: 1.2;
+  font-weight: bold;  /*GRASETTO*/
+  font-size: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+footer p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:white;
+}
